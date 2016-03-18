@@ -44,10 +44,15 @@ b.bundle().pipe(fs.createWriteStream('bundle.js'));
 
 ## Usage
 
-`browserify-exec` builds on top of [static-module](https://github.com/substack/static-module) so to use it, you first need to require the module by `var exec = require('browserify-exec'). Then you can use `exec` anywhere by passing in a command line string to execute. The result will be inlined and will replace the `exec` call. You also have access to __filename and __dirname variables in the arguments to `exect`.
+`browserify-exec` builds on top of [static-module](https://github.com/substack/static-module) so to use it, you first need to require the module by
+```javascript
+var exec = require('browserify-exec')
+```
+
+Then you can use `exec` anywhere by passing in a command line string to execute. The result will be inlined and will replace the `exec` call. You also have access to __filename and __dirname variables in the arguments to `exec`.
 
 ## Related
 
 Please also checkout these related transforms:
-[brfs](https://github.com/substack/brfs)
-[browserify-inline](https://github.com/eirikb/browserify-inline)
+- [brfs](https://github.com/substack/brfs)
+- [browserify-inline](https://github.com/eirikb/browserify-inline)
